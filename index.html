@@ -1,5 +1,10 @@
 <html>
     <style>
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+    }
     .center {
         display: block;
         margin-left: auto;
@@ -10,30 +15,72 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
-        padding: px;
-        width: 500px;
+        width: 650px;
         height: 50px;
         border: 0;
         box-shadow: 0 2px 2px 0 gray;
     }
-    .button1 {
+    .button1 {       
+        position: absolute;
+        margin-left: 175px;
         overflow: hidden;
-        margin: auto;
         background-color: #f5f5f5;
         border: 1;
-        width: 50px;
+        width: 80px;
         height: 10px;
         white-space: nowrap;
         text-decoration: none;
         border-radius: 5px;
         padding: 15px 32px;
         color: black;
-        text-align: center;
+        text-align:left;
         display: inline-block;
         font-size: .75em;
     }
+    .button2 {
+        position: absolute;
+        margin-left: 325px;
+        overflow: hidden;
+        background-color: #f5f5f5;
+        border: 1;
+        width: 100px;
+        height: 10px;
+        white-space: nowrap;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 15px 32px;
+        color: black;
+        text-align:left;
+        display: inline-block;
+        font-size: .75em;
+    }
+    .nav {
+        float: right;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .button3 {
+        float: right;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        height: 30px;
+        width: 50px;
+        white-space: nowrap;
+        display: inline-block;
+        text-align: center;
+        padding: 5px 5px 0px 5px;
+    }
     </style>
-    <head> <a href="https://about.google/intl/en/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>   <a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a></head>
+    <head> 
+    <a href="https://about.google/intl/en/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" style="text-decoration: none">About</a>   
+    <a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042" style="text-decoration: none">Store</a>
+    <a href="#" class="button3">Sign In</a>
+    <img src="/home/jmcneilan/Pictures/googleimage.png" class="nav">
+    <a href="#" class="nav">Images</a>
+    <a href="#" class="nav">Gmail</a>
+    </head>
     <body>
         <div>
         <br>
@@ -49,9 +96,13 @@
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="center"></div>
         <div class="searchbox">
             <input type="text" placeholder="" class="searchbox"></div>
-        <div>
             <br>
+            <br>
+            <div id="container">
+            <div>
             <a href="#" class="button1">Google Search</a>
+            <a href="#" class="button2">I'm Feeling Lucky</a>
+        </div>
         </div>
         </body>
 </html>
